@@ -1,0 +1,43 @@
+package padej.soup.base.util.logger;
+
+public class ConsoleColors {
+   public static final String RESET = "\u001b[0m";
+   public static final String CLAUDE_ORANGE = "\u001b[38;5;208m";
+   public static final String CLAUDE_BLUE = "\u001b[38;5;75m";
+   public static final String CLAUDE_GRAY = "\u001b[38;5;246m";
+   public static final String CLAUDE_WHITE = "\u001b[38;5;255m";
+   public static final String CLAUDE_GREEN = "\u001b[38;5;82m";
+   public static final String CLAUDE_RED = "\u001b[38;5;196m";
+   public static final String CLAUDE_YELLOW = "\u001b[38;5;221m";
+   public static final String CLAUDE_PURPLE = "\u001b[38;5;141m";
+   public static final String CLAUDE_PROTECT_TEXT = "\u001b[38;2;43;43;43m";
+   public static final String CLAUDE_PROTECT_BG = "\u001b[48;2;255;138;76m";
+   public static final String CLAUDE_PROTECT_ACCENT = "\u001b[38;2;255;138;76m";
+   public static final String CLAUDE_PROTECT_BORDER = "\u001b[38;2;237;97;36m";
+   public static final String BG_CLAUDE_DARK = "\u001b[48;5;236m";
+   public static final String BG_CLAUDE_ORANGE = "\u001b[48;5;208m";
+   public static final String BG_CLAUDE_GREEN = "\u001b[48;5;82m";
+   public static final String BG_CLAUDE_RED = "\u001b[48;5;196m";
+   public static final String BG_CLAUDE_YELLOW = "\u001b[48;5;221m";
+   public static final String BG_CLAUDE_BLUE = "\u001b[48;5;75m";
+   public static final String BOLD = "\u001b[1m";
+   public static final String DIM = "\u001b[2m";
+   public static final String ITALIC = "\u001b[3m";
+   public static final String UNDERLINE = "\u001b[4m";
+   public static final String BLACK = "\u001b[0;30m";
+   public static final String RED = "\u001b[0;31m";
+   public static final String GREEN = "\u001b[0;32m";
+   public static final String YELLOW = "\u001b[0;33m";
+   public static final String BLUE = "\u001b[0;34m";
+   public static final String PURPLE = "\u001b[0;35m";
+   public static final String CYAN = "\u001b[0;36m";
+   public static final String WHITE = "\u001b[0;37m";
+   public static final String BG_BLACK = "\u001b[40m";
+   public static final String BG_RED = "\u001b[41m";
+   public static final String BG_GREEN = "\u001b[42m";
+   public static final String BG_YELLOW = "\u001b[43m";
+   public static final String BG_BLUE = "\u001b[44m";
+   public static final String BG_PURPLE = "\u001b[45m";
+   public static final String BG_CYAN = "\u001b[46m";
+   public static final String BG_WHITE = "\u001b[47m";
+}

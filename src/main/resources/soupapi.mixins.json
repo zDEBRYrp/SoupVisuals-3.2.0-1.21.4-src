@@ -1,0 +1,57 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "padej.soup.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ClientConnectionMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "ScoreboardMixin",
+    "TextVisitFactoryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "priority": 1500,
+  "overwrites": {
+    "conformVisibility": true
+  },
+  "client": [
+    "BackGroundRendererMixin",
+    "BossBarHudMixin",
+    "CameraMixin",
+    "CapabilityTrackerMixin",
+    "ChatScreenMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "ClientWorldMixin",
+    "ClientWorldPropertiesMixin",
+    "DrawContextMixin",
+    "EndCrystalEntityRendererMixin",
+    "EntityRenderDispatcherMixin",
+    "EntityRendererMixin",
+    "GameRendererMixin",
+    "HeldItemRendererMixin",
+    "InGameHudMixin",
+    "InGameOverlayRendererMixin",
+    "KeyBindingMixin",
+    "KeyboardMixin",
+    "LightmapCoordinatesRetrieverMixin",
+    "LightmapTextureManagerMixin",
+    "MinecraftClientMixin",
+    "MouseMixin",
+    "MultiplayerScreenMixin",
+    "PlayerEntityRendererMixin",
+    "PlayerListHudMixin",
+    "ScreenMixin",
+    "SurvivalInventoryMixin",
+    "TitleScreenMixin",
+    "WorldRendererMixin",
+    "accessor.BufferRendererAccessor",
+    "accessor.EndCrystalEntityModelAccessor",
+    "accessor.PlayerListEntryAccessor"
+  ],
+  "refmap": "SoupVisuals-refmap.json"
+}

@@ -1,0 +1,21 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "1-dstcolor",
+    "dstrgb": "1-srccolor"
+  },
+  "vertex": "minecraft:core/arc_inverted",
+  "fragment": "minecraft:core/arc_inverted",
+  "attributes": [],
+  "samplers": [],
+  "uniforms": [
+    { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "size", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+    { "name": "location", "type": "float", "count": 2, "values": [ 1.0, 1.0 ] },
+    { "name": "radius", "type": "float", "count": 1, "values": [ 1.0] },
+    { "name": "thickness", "type": "float", "count": 1, "values": [ 1.0] },
+    { "name": "start", "type": "float", "count": 1, "values": [ 1.0] },
+    { "name": "end", "type": "float", "count": 1, "values": [ 1.0] }
+  ]
+}

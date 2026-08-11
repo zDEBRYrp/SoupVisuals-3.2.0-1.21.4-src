@@ -1,0 +1,162 @@
+{
+  "gui_open": {
+    "sounds": [
+      "minecraft:gui_open"
+    ]
+  },
+  "gui_close": {
+    "sounds": [
+      "minecraft:gui_close"
+    ]
+  },
+  "module_enable": {
+    "sounds": [
+      "minecraft:module_enable"
+    ]
+  },
+  "module_disable": {
+    "sounds": [
+      "minecraft:module_disable"
+    ]
+  },
+  "turn_on_click": {
+    "sounds": [
+      "minecraft:turn_on_click"
+    ]
+  },
+  "turn_off_click": {
+    "sounds": [
+      "minecraft:turn_off_click"
+    ]
+  },
+  "click": {
+    "sounds": [
+      "minecraft:click"
+    ]
+  },
+  "change_category": {
+    "sounds": [
+      "minecraft:change_category"
+    ]
+  },
+  "slider_step": {
+    "sounds": [
+      "minecraft:slider_step"
+    ]
+  },
+  "trinket_hit": {
+    "sounds": [
+      "minecraft:trinket_hit"
+    ]
+  },
+  "8bit": {
+    "sounds": [
+      "minecraft:8bit"
+    ]
+  },
+  "glass": {
+    "sounds": [
+      "minecraft:glass"
+    ]
+  },
+  "drum_bass": {
+    "sounds": [
+      "minecraft:drum_bass"
+    ]
+  },
+  "aimbooster_hit": {
+    "sounds": [
+      "minecraft:aimbooster_hit"
+    ]
+  },
+  "plastic_ball": {
+    "sounds": [
+      "minecraft:plastic_ball"
+    ]
+  },
+  "blip": {
+    "sounds": [
+      "minecraft:blip"
+    ]
+  },
+  "pop": {
+    "sounds": [
+      "minecraft:pop"
+    ]
+  },
+  "bell": {
+    "sounds": [
+      "minecraft:bell"
+    ]
+  },
+  "bonk": {
+    "sounds": [
+      "minecraft:bonk"
+    ]
+  },
+  "bubble": {
+    "sounds": [
+      "minecraft:bubble"
+    ]
+  },
+  "get": {
+    "sounds": [
+      "minecraft:get"
+    ]
+  },
+  "magic_pok": {
+    "sounds": [
+      "minecraft:magic_pok"
+    ]
+  },
+  "off": {
+    "sounds": [
+      "minecraft:off"
+    ]
+  },
+  "on": {
+    "sounds": [
+      "minecraft:on"
+    ]
+  },
+  "squish": {
+    "sounds": [
+      "minecraft:squish"
+    ]
+  },
+  "kill_sounds/abmiss": {
+    "sounds": [
+      "minecraft:kill_sounds/abmiss"
+    ]
+  },
+  "kill_sounds/critow": {
+    "sounds": [
+      "minecraft:kill_sounds/critow"
+    ]
+  },
+  "kill_sounds/final_blink": {
+    "sounds": [
+      "minecraft:kill_sounds/final_blink"
+    ]
+  },
+  "kill_sounds/final_pok": {
+    "sounds": [
+      "minecraft:kill_sounds/final_pok"
+    ]
+  },
+  "kill_sounds/neptune": {
+    "sounds": [
+      "minecraft:kill_sounds/neptune"
+    ]
+  },
+  "kill_sounds/rust_headshot": {
+    "sounds": [
+      "minecraft:kill_sounds/rust_headshot"
+    ]
+  },
+  "kill_sounds/whii": {
+    "sounds": [
+      "minecraft:kill_sounds/whii"
+    ]
+  }
+}

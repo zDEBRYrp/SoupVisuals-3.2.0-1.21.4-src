@@ -1,0 +1,36 @@
+{
+  "accessWidener": "soupapi.accesswidener",
+  "schemaVersion": 1,
+  "id": "soupapi",
+  "version": "3.2.0",
+  "name": "soupapi",
+  "description": "Fancy & Free",
+  "icon": "assets/soupapi/soup.png",
+  "authors": [
+    "Padej_"
+  ],
+  "contact": {
+    "website": "none",
+    "repo": "none"
+  },
+  "license": "SOUP-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "padej.soup.core.Main"
+    ]
+  },
+  "mixins": [
+    "soupapi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric-resource-loader-v0": "*",
+    "fabric": "*",
+    "minecraft": "1.21.4"
+  },
+  "breaks": {
+    "naturalmotionblur": "*",
+    "c2me": "*"
+  }
+}

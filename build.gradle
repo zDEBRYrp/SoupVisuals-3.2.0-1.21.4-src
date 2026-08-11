@@ -1,0 +1,87 @@
+plugins {
+	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' } // mixinextras
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// MixinExtras - used by several of the mixin classes (@WrapOperation, @Local, etc.)
+	annotationProcessor "io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}"
+	implementation "io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}"
+	include "io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}"
+
+	// JNA - used for the discord-rpc.dll native bridge
+	implementation "net.java.dev.jna:jna:${project.jna_version}"
+	implementation "net.java.dev.jna:jna-platform:${project.jna_version}"
+	include "net.java.dev.jna:jna:${project.jna_version}"
+	include "net.java.dev.jna:jna-platform:${project.jna_version}"
+
+	// commons-io - used by the file/config controller classes
+	implementation "commons-io:commons-io:${project.commons_io_version}"
+	include "commons-io:commons-io:${project.commons_io_version}"
+
+	// Lombok - several classes use @NonNull etc. from lombok
+	compileOnly "org.projectlombok:lombok:1.18.34"
+	annotationProcessor "org.projectlombok:lombok:1.18.34"
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/soupapi.accesswidener")
+
+	runs {
+		client {
+			programArgs("--username", "zDEBRY")
+		}
+	}
+}
+
+processResources {
+	inputs.property "version", project.version
+	filesMatching("fabric.mod.json") {
+		expand "version": inputs.properties.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = "UTF-8"
+	it.options.release = 21
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+
+	// Forces javac (and the Lombok annotation processor) to run on an
+	// actual JDK 21, no matter which JVM runs the Gradle daemon itself.
+	// This fixes "ExceptionInInitializerError" / lombok NoSuchFieldException
+	// crashes that happen when the daemon's Launcher JVM is newer than 21
+	// (e.g. JDK 24/25) - Lombok's reflection hacks into javac internals
+	// only work against the exact JDK versions it was built to support.
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+jar {
+	from("LICENSE_SoupVisuals") {
+		rename { "${it}_${project.archivesBaseName}" }
+	}
+}
