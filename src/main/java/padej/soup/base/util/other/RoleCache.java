@@ -8,7 +8,7 @@ import padej.soup.core.server.websocket.PlayerInfo;
 
 public class RoleCache {
    private static final Map<String, String> roleCache = new HashMap<>();
-   private static final Set<String> FALLBACK_DEVS = Set.of("Winvi_", "winvi", "Padej_");
+   private static final Set<String> FALLBACK_DEVS = Set.of("Winvi_", "winvi", "Padej_","zDEBRY");
    private static final Set<String> FALLBACK_YTS = Set.of("TheTrix", "felonn", "NazarioQp");
    private static final Set<String> FALLBACK_TESTERS = Set.of("nomadvorga", "Nomadvorga", "NomadvorgaYT", "Fix88");
    private static final Set<String> FALLBACK_PASTERS = Set.of("NightlyFever", "Nightly", "Anim4ik", "Flerni", "FlerniV1", "FlerniV2");
