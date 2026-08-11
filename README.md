@@ -17,7 +17,7 @@
 ### 🛠 Сборка проекта
 
 ```bash
-git clone [https://github.com/zDEBRYrp/SoupVisuals-3.2.0-1.21.4-src.git](https://github.com/zDEBRYrp/SoupVisuals-3.2.0-1.21.4-src.git)
+git clone https://github.com/zDEBRYrp/SoupVisuals-3.2.0-1.21.4-src.git
 cd SoupVisuals-3.2.0-1.21.4-src
 gradlew build
 ```
