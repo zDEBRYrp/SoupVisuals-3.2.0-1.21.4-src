@@ -62,15 +62,6 @@ gradlew.bat build
 
 ---
 
-## Что можно добавить / пофиксить
-- Добавить файл `LICENSE` с точной лицензией проекта.
-- Добавить CHANGELOG с заметками релиза 3.2.0.
-- Добавить CONTRIBUTING.md и шаблоны для Issues/PR.
-- Добавить скриншоты/демо в `docs/` или `assets/`.
-- Настроить CI (GitHub Actions) для автоматической сборки.
-
----
-
 *Опубликовано автором:* [zDEBRY](https://github.com/zDEBRYrp)
 
 ---
@@ -136,15 +127,6 @@ The built artifact will appear in `build/libs/`. Place the resulting `.jar` into
 - Open the project in IntelliJ IDEA or VSCode.
 - Import the Gradle project.
 - Use `runClient` / `runServer` (Fabric Loom) configurations for testing.
-
----
-
-## Suggested improvements
-- Add a `LICENSE` file and state the project license clearly.
-- Add a CHANGELOG describing changes in 3.2.0.
-- Add CONTRIBUTING.md and issue/PR templates.
-- Include screenshots or demo GIFs in `docs/` or `assets/`.
-- Add GitHub Actions CI for automatic builds.
 
 ---
 
